@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Shopping Cart - CouchCart</title>
+	<link href="css/styles.css" rel="stylesheet" media="screen,projection" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700" rel="stylesheet" media="screen,projection" type="text/css">
+	<!--[if lt IE 9]>
+		<script src="js/ie9.js" type="text/javascript"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="page-wrap">
+		<header>
+			<div class="header">
+				<a href="index.html" class="logo">Couch<span class="color">Cart</span></a>
+			</div>
+			<nav>
+				<ul>
+					<li class="nav-button">
+						<a href="index.html" class="nav">Products</a>
+					</li>
+					<li class="nav-button">
+						<a href="cart.html" class="nav cart"><span class="quantity">4</span> item(s) - $<span class="price">78.00</span></a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<div class="row">
+				<div class="twelve columns">
+					<form action="" method="post" accept-charset="utf-8">
+						<table>
+							<thead>
+								<tr>
+									<th class="col-remove">&nbsp;</th>
+									<th class="col-desc">Item</th>
+									<th class="col-quantity">Qty</th>
+									<th class="col-price">Price</th>
+									<th class="col-subtotal">Total</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="col-remove"><a href="cart.html?action=remove" class="cart-remove" title="Remove">&times;<span class="screen-reader">Remove</span></a></td>
+									<td class="col-desc">
+										<a href="index.html" class="cart-thumb">
+											<img src="uploads/image/paper-airplane-70x64.png" width="70" height="64" alt="Paper Airplane">
+										</a>
+										<div class="desc-box">
+											<a href="index.html">Paper Airplane</a>
+											<p>Color: Red<br>Custom Text: John Doe</p>
+										</div>
+									</td>
+									<td class="col-quantity"><input class="quantity-input" type="number" min="0" step="1" value="3" title="Quantity"></td>
+									<td class="col-price">$6.00</td>
+									<td class="col-subtotal">$18.00</td>
+								</tr>
+								<tr>
+									<td class="col-remove"><a href="cart.html?action=remove" class="cart-remove" title="Remove">&times;<span class="screen-reader">Remove</span></a></td>
+									<td class="col-desc">
+										<a href="index.html" class="cart-thumb">
+											<img src="uploads/image/globe-70x64.png" width="70" height="64" alt="Raised Relief World Globe">
+										</a>
+										<div class="desc-box">
+											<a href="index.html">Raised Relief World Globe</a>
+											<p>Illuminated: No<br>Stand Type: Tabletop<br>Stand Material: Brass</p>
+										</div>
+									</td>
+									<td class="col-quantity"><input class="quantity-input" type="number" min="0" step="1" value="1" title="Quantity"></td>
+									<td class="col-price">$60.00</td>
+									<td class="col-subtotal">$60.00</td>
+								</tr>
+                                <tr class="row-extras">
+                                    <td class="col-extras-label" colspan="4">Shipping:</td>
+                                    <td class="col-extras">$20</td>
+                                </tr>
+								<tr class="row-total">
+									<td class="col-total-label" colspan="4">Total:</td>
+									<td class="col-total">$98.00</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="cart-operations">
+							<div class="checkout-box">
+								<input class="button checkout-button" type="submit" name="checkout" value="Checkout">
+							</div>
+							<div class="update-box">
+								<input class="button update-button" type="submit" value="Update Quantities">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</div>
+	<div class="footer-wrap">
+		<div class="footer-bar">
+			<p>
+				<span class="copyright">Theme by <a href="http://incrementwebservices.com/">Increment Web Services</a></span><span class="powered-by">Powered by <a href="http://www.couchcms.com/">CouchCMS</a></span>
+			</p>
+		</div>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+	<script src="js/input-restriction.js" type="text/javascript"></script>
+</body>
+</html>

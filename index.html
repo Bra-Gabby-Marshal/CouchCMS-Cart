@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Products - CouchCart</title>
+	<link href="css/styles.css" rel="stylesheet" media="screen,projection" type="text/css">
+	<link href="css/bootstrap.css" rel="stylesheet" media="screen,projection" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700" rel="stylesheet" media="screen,projection" type="text/css">
+	<!--[if lt IE 9]>
+		<script src="js/ie9.js" type="text/javascript"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="page-wrap">
+		<header>
+			<div class="header">
+				<a href="index.html" class="logo">Couch<span class="color">Cart</span></a>
+			</div>
+			<nav>
+				<ul>
+					<li class="nav-button">
+						<a href="index.html" class="nav">Products</a>
+					</li>
+					<li class="nav-button">
+						<a href="cart.html" class="nav cart"><span class="quantity">0</span> item(s) - $<span class="price">0.00</span></a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<div class="row">
+				<div class="five columns">
+					<div class="product-image-full">
+						<img src="uploads/image/globe.png" class="product-image-preview" width="382" height="337" alt="Raised Relief World Globe" title="Raised Relief World Globe">
+					</div>
+				</div>
+				<div class="seven columns left-gutter">
+					<h1 class="product-headline">Raised Relief World Globe</h1>
+					<div class="product-details">
+						<form class="cart-form" action="cart.html" method="post" accept-charset="utf-8">
+							<div class="product-top-box">
+								<h2 class="product-price-big">$50.00</h2>
+								<div class="purchase-box">
+									<label class="quantity-label">Qty:</label>
+									<input class="product-quantity" name="quantity" id="quantity" type="number" step="1" value="1" title="Quantity">
+									<input class="button product-add" type="submit" value="Add to Cart">
+								</div>
+							</div>
+							<div class="product-options">
+								<label>Illuminated:</label>
+								<select name="illuminated">
+									<option>No</option>
+									<option>Yes [+$5.00]</option>
+								</select>
+								<label>Stand Type:</label>
+								<select name="stand-type">
+									<option>Tabletop</option>
+									<option>Floor [+$15.00]</option>
+								</select>
+								<label>Stand Material:</label>
+								<select name="stand-material">
+									<option>Plastic</option>
+									<option>Brass [+$10.00]</option>
+									<option>Wood [+$25.00]</option>
+								</select>
+								<p><strong>Description:</strong><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+					<div class="products-hr"></div>
+				</div>
+				<div class="five columns">
+					<div class="product-image-full">
+						<img src="uploads/image/paper-airplane.png" class="product-image-preview" width="382" height="337" alt="Paper Airplane" title="Paper Airplane">
+					</div>
+				</div>
+				<div class="seven columns left-gutter">
+					<h1 class="product-headline">Paper Airplane</h1>
+					<div class="product-details">
+						<form class="cart-form" action="cart.html" method="post" accept-charset="utf-8">
+							<div class="product-top-box">
+								<h2 class="product-price-big">$6.00</h2>
+								<div class="purchase-box">
+									<label class="quantity-label">Qty:</label>
+									<input class="product-quantity" name="quantity" id="quantity" type="number" step="1" value="1" title="Quantity">
+									<input class="button product-add" type="submit" value="Add to Cart">
+								</div>
+							</div>
+							<div class="product-options">
+								<label>Color:</label>
+								<select name="color">
+									<option>Red</option>
+									<option>Green</option>
+									<option>Blue</option>
+								</select>
+								<label>Custom Text:</label>
+								<input type="text" name="custom-text" maxlength="200" value="">
+								<p><strong>Description:</strong><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+					<div class="products-hr"></div>
+				</div>
+				<div class="five columns">
+					<div class="product-image-full">
+						<img src="uploads/image/paper-clip.png" class="product-image-preview" width="382" height="337" alt="500 Steel Paper Clips" title="500 Steel Paper Clips">
+					</div>
+				</div>
+				<div class="seven columns left-gutter">
+					<h1 class="product-headline">500 Steel Paper Clips</h1>
+					<div class="product-details">
+						<form class="cart-form" action="cart.html" method="post" accept-charset="utf-8">
+							<div class="product-top-box">
+								<h2 class="product-price-big">$11.00</h2>
+								<div class="purchase-box">
+									<label class="quantity-label">Qty:</label>
+									<input class="product-quantity" name="quantity" id="quantity" type="number" step="1" value="1" title="Quantity">
+									<input class="button product-add" type="submit" value="Add to Cart">
+								</div>
+							</div>
+							<div class="product-options">
+								<label>Size:</label>
+								<br><label class="radio-label"><input type="radio" name="size" value="large">Large</label>
+								<br><label class="radio-label"><input type="radio" name="size" value="medium" checked="true">Medium</label>
+								<br><label class="radio-label"><input type="radio" name="size" value="small">Small</label>
+								<p><strong>Description:</strong><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<div class="footer-wrap">
+		<div class="footer-bar">
+			<p>
+				<span class="copyright">Theme by <a href="http://incrementwebservices.com/">Increment Web Services</a></span><span class="powered-by">Powered by <a href="http://www.couchcms.com/">CouchCMS</a></span>
+			</p>
+		</div>
+	</div>
+	<div id="cart-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-body"></div>
+		<button class="modal-close" data-dismiss="modal" title="Close">&times;</button>
+		<img src="images/ajax-loader.gif" class="ajax-loader" width="32" height="32" alt="Loading...">
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.js" type="text/javascript"></script>
+	<!--
+    <script type="text/javascript">
+		// Set global values for 'js/cart-modal.js' that follows
+		var cart_link = "cart-modal.html";
+		var checkout_link = "cart.html?action=checkout";
+	</script>
+	<script src="js/cart-modal.js" type="text/javascript"></script>
+	<script src="js/input-restriction.js" type="text/javascript"></script>
+    -->
+</body>
+</html>
